@@ -6,6 +6,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo \'Welcome\''
+        sh 'git clone https://github.com/itayGabza/jenkins-test.git' 
       }
     }
 
