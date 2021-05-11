@@ -3,10 +3,10 @@ pipeline {
   agent any
 
   stages {
-    stage('Git Clone') {
+    stage('Git Clonee') {
       steps {
         sh 'echo \'Git cloning\''
-        sh 'git clone https://github.com/itayGabza/jenkins-test.git' 
+        sh 'git status' 
       }
     }
 
