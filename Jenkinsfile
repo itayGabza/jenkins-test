@@ -6,7 +6,7 @@ pipeline {
     stage('Git Clonee') {
       steps {
         sh 'echo \'Git cloning\''
-        sh 'git branch: 'main', credentialsId: '8dca5a14-6d7e-4fed-acd1-c918a89b2c2c', url: 'https://github.com/itayGabza/jenkins-test.git'' 
+        sh 'git status' 
       }
     }
 
