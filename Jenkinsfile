@@ -1,17 +1,18 @@
-pipeline{
-  agent {
-    stages{
-       stage ('build') {
-          steps {
-              //build
-              echo 'Hellow World'
-          }
-       }
-       stage ('test') {
-          echo "test"
-          //test 
-       }
+  
+pipeline {
+  agent any
 
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo \'Welcome\''
+      }
+    }
+
+    stage('Pack') {
+      steps {
+        sh 'echo \'build\''
+      }
     }
   }
 }
